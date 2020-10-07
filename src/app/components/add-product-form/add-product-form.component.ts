@@ -32,4 +32,10 @@ export class AddProductFormComponent {
     console.log(data);
     this.productService.newProduct(data).subscribe(res => console.log(res));
   }
+
+  /**
+   * I ran out of time, this request is failing with:
+   * POST http://comlyn.com/rnd/api/product 417 (Expectation Failed).
+   * Seems like one parameter isn't meeting the requirements, unfortunately I am out of time at this point.
+   */
 }

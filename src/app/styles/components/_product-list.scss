@@ -6,9 +6,26 @@
     width: 100%;
   }
 
+  &__table-header {
+    font-weight: bold;
+  }
+
   &__item {
-    > td {
-      width: 33%;
+    border-bottom: 1px solid $color-grey;
+    height: 100px;
+
+    &:first-of-type {
+      border-top: 1px solid $color-grey;
     }
+  }
+
+  &__edit-button {
+    border: 1px solid $color-grey-dark;
+    border-radius: 100px;
+    color: $color-blue;
+    background: none;
+    width: 160px;
+    height: 40px;
+    font-weight: bold;
   }
 }

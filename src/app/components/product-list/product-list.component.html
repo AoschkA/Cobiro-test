@@ -1,14 +1,14 @@
 <div class="product-list">
   <table class="product-list__table">
     <tr>
-      <td>Product</td>
-      <td>Price</td>
+      <td class="product-list__table-header">Product</td>
+      <td class="product-list__table-header">Price</td>
     </tr>
 
     <tr *ngFor="let product of products" class="product-list__item">
-      <td>{{product.title}} <div>{{product.description}}</div></td>
+      <td>{{product.title}}</td>
       <td><b>{{product.price}}</b></td>
-      <td>EDIT</td>
+      <td><button class="product-list__edit-button">Edit product</button></td>
     </tr>
   </table>
 </div>

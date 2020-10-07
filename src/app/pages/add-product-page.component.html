@@ -1,0 +1,27 @@
+<form class="add-product">
+  <div class="add-product-details">
+    <h2>Product details</h2>
+
+    <label>
+      Product name
+      <input type="text" [formControl]="name">
+    </label>
+
+    <label>
+      Description
+      <textarea type="text" [formControl]="description"></textarea>
+    </label>
+  </div>
+
+  <div class="add-product-price">
+    <label>
+      Product price
+      <input type="text" [formControl]="price">
+    </label>
+
+    <label>
+      Discount price (optional)
+      <input type="text" [formControl]="discount">
+    </label>
+  </div>
+</form>

@@ -1,0 +1,36 @@
+<form class="add-product" [formGroup]="productForm">
+  <div class="add-product__details">
+    <h2 class="add-product__title">Product details</h2>
+
+    <div class="add-product__row">
+      <label>
+        Product name
+        <input type="text" [formControl]="name">
+      </label>
+    </div>
+
+    <div class="add-product__row">
+      <label>
+        Description
+        <textarea type="text" [formControl]="description"></textarea>
+      </label>
+    </div>
+  </div>
+
+  <div class="add-product__price">
+    <div class="add-product__row">
+      <label>
+        Product price
+        <input type="text" [formControl]="price">
+      </label>
+    </div>
+
+
+    <div class="add-product__row">
+      <label>
+        Discount price (optional)
+        <input type="text" [formControl]="discount">
+      </label>
+    </div>
+  </div>
+</form>

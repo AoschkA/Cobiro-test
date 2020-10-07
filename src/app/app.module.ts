@@ -9,6 +9,8 @@ import {ProductService} from './services/product.service';
 import {HttpClientModule} from '@angular/common/http';
 import {ProductListComponent} from './components/product-list/product-list.component';
 import {HeaderComponent} from './components/header/header.component';
+import {AddProductFormComponent} from './components/add-product-form/add-product-form.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,7 @@ import {HeaderComponent} from './components/header/header.component';
     AddProductPageComponent,
     ProductListComponent,
     HeaderComponent,
+    AddProductFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,9 @@ import {HeaderComponent} from './components/header/header.component';
       { path: 'add', component: AddProductPageComponent },
     ]),
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [
     ProductService

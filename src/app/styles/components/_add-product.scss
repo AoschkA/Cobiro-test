@@ -1,0 +1,36 @@
+.add-product {
+  display: flex;
+
+  &__details {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  &__price {
+    width: 33%;
+  }
+
+  &__details, &__price {
+    background-color: $color-white;
+    padding: 40px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+
+  &__row {
+    margin-bottom: 40px;
+  }
+
+  input, textarea {
+    display: block;
+    width: 100%;
+  }
+
+  textarea {
+    resize: none;
+    height: 300px;
+  }
+}

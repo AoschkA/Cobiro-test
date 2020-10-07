@@ -4,7 +4,7 @@ import {IProduct} from '../types';
 
 @Component({
   selector: 'app-home-page',
-  template: `<div>hello world</div>`
+  templateUrl: './home-page.component.html'
 })
 
 export class HomePageComponent implements OnInit {

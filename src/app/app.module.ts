@@ -7,12 +7,16 @@ import {RouterModule} from '@angular/router';
 import {CommonModule} from '@angular/common';
 import {ProductService} from './services/product.service';
 import {HttpClientModule} from '@angular/common/http';
+import {ProductListComponent} from './components/product-list/product-list.component';
+import {HeaderComponent} from './components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    AddProductPageComponent
+    AddProductPageComponent,
+    ProductListComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

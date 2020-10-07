@@ -1,4 +1,17 @@
 .header {
   height: 223px;
-  background-color: white;
+  background-color: $color-white;
+  padding-top: 55px;
+
+  &__icon-container {
+    height: 112px;
+    width: 112px;
+    background-color: $color-yellow;
+    border-radius: 15px;
+  }
+
+  &__container {
+    flex: 1;
+    padding-left: 50px;
+  }
 }

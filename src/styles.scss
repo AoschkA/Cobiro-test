@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import './app/styles/variables';
+@import './app/styles/shared';
+@import './app/app.component';
+
+// components
+@import './app/styles/components/header';
+@import './app/styles/components/product-list';
+
+body {
+  font-family: sans-serif;
+}

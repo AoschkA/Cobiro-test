@@ -1,27 +1,30 @@
-<form class="add-product" [formGroup]="productForm">
+<form class="add-product" [formGroup]="productForm" (ngSubmit)="onSubmit()">
   <div class="add-product__details">
     <h2 class="add-product__title">Product details</h2>
 
     <div class="add-product__row">
       <label>
         Product name
-        <input type="text" [formControl]="name">
+        <input type="text" formControlName="name">
       </label>
     </div>
 
     <div class="add-product__row">
       <label>
         Description
-        <textarea type="text" [formControl]="description"></textarea>
+        <textarea type="text" formControlName="description"></textarea>
       </label>
     </div>
+
+    <!-- Quickly reuse styling-->
+    <button class="product-list__edit-button" (click)="onSubmit()">Submit</button>
   </div>
 
   <div class="add-product__price">
     <div class="add-product__row">
       <label>
         Product price
-        <input type="text" [formControl]="price">
+        <input type="text" formControlName="price">
       </label>
     </div>
 
@@ -29,7 +32,7 @@
     <div class="add-product__row">
       <label>
         Discount price (optional)
-        <input type="text" [formControl]="discount">
+        <input type="text" formControlName="discount">
       </label>
     </div>
   </div>

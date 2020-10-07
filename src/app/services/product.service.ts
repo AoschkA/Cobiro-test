@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {BehaviorSubject} from 'rxjs';
+import {BehaviorSubject, Observable} from 'rxjs';
 import {IProduct} from '../types';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {IProductsResponse} from './response.types';
@@ -19,5 +19,11 @@ export class ProductService {
         this.productList.next(res.data);
       }
     );
+  }
+
+  // TODO make typings
+  public newProduct(data: any): Observable<any> {
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+    return this.http.post('http://comlyn.com/rnd/api/product', {headers});
   }
 }
